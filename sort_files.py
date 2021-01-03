@@ -22,17 +22,17 @@ class sort_files:
         self.number_of_files = len(self.files)
 
     def sort_number(self):
-        number=[]
+        numbers=[]
         start=len(self.file_name)
         for i in range(self.number_of_files):
-            number.append(int(self.files[i][start:-4]))
-        return sorted(number)
+            numbers.append(int(self.files[i][start:-4]))
+        return sorted(numbers)
 
     def sorted_files(self):
         sorted_files=[]
-        sorted_num=self.sort_number()
+        sorted_nums=self.sort_number()
         for i in range(self.number_of_files):
-            sorted_files.append(self.file_name+str(sorted_num[i])+".mp3")
+            sorted_files.append(self.file_name+str(sorted_nums[i])+".mp3")
         return sorted_files
 
 
