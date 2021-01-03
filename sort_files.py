@@ -4,7 +4,10 @@ class sort_files:
 
     """
     Dosya ismine ek olan sayılara göre sıralama yapar (küçükten büyüğe doğru)
-    Sadece belirtilen isimdeki dosyaları sıralı olarak listeler
+    Sadece belirtilen isimdeki(parametre olarak verilen, file_name parametresi) dosyaları sıralı olarak listeler
+    
+    output0.mp3,output1.mp3,output2.mp3,output3.mp3,output4.mp3 için;
+    output kelimesinin sonundaki sayılara göre, verilen dizindeki dosyaları sıralar
 
     """
 
@@ -19,11 +22,6 @@ class sort_files:
         self.number_of_files = len(self.files)
 
     def sort_number(self):
-        """
-        output0.mp3,output1.mp3,output2.mp3,output3.mp3,output4.mp3 için;
-        output kelimesinin sonundaki sayılara göre, verilen dizindeki dosyaları sıralar
-
-        """
         number=[]
         start=len(self.file_name)
         for i in range(self.number_of_files):
