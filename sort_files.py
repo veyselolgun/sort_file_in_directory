@@ -21,7 +21,7 @@ class sort_files:
 
         self.number_of_files = len(self.files)
 
-    def sort_number(self):
+    def __sort_number(self):
         numbers=[]
         start=len(self.file_name)
         for i in range(self.number_of_files):
@@ -30,7 +30,7 @@ class sort_files:
 
     def sorted_files(self):
         sorted_files=[]
-        sorted_nums=self.sort_number()
+        sorted_nums=self.__sort_number()
         for i in range(self.number_of_files):
             sorted_files.append(self.file_name+str(sorted_nums[i])+self.extension)
         return sorted_files
