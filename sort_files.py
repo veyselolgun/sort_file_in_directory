@@ -12,12 +12,8 @@ class sort_files:
 
     def __init__(self,directory,file_name,extension):
         self.extension=extension
-        self.files= os.listdir(directory)
+        self.files= [file for file in os.listdir(directory) if file.endswith(self.extension)]
         self.file_name=file_name
-
-        for i,j in enumerate(self.files):
-            if not self.files[i].endswith(self.extension):
-                self.files.remove(self.files[i])
 
         self.number_of_files = len(self.files)
 
