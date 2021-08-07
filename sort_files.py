@@ -3,7 +3,7 @@ class sort_files:
 
     """
     Dosya ismine ek olan sayılara göre sıralama yapar (küçükten büyüğe doğru)
-    Sadece belirtilen isimdeki(parametre olarak verilen, file_name parametresi) dosyaları sıralı olarak listeler
+    Sadece belirtilen isimdeki(argüman olarak verilen, file_name parametresi) dosyaları sıralı olarak listeler
 
     output0.mp3,output1.mp3,output2.mp3,output3.mp3,output4.mp3 için;
     output kelimesinin sonundaki sayılara göre, verilen dizindeki dosyaları sıralar
